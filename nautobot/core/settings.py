@@ -92,7 +92,7 @@ PAGINATE_COUNT = 50
 PER_PAGE_DEFAULTS = [25, 50, 100, 250, 500, 1000]
 
 # Plugins
-PLUGINS = []
+PLUGINS = ["diagram"]
 PLUGINS_CONFIG = {}
 
 # IPv4?
