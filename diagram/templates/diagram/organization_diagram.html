@@ -46,7 +46,7 @@
                                     <script>
                                     function get_tree_data() {
                                         $.ajax({
-                                            url: "{% url 'plugins:diagram:load-data' pk=pk %}",
+                                            url: "{% url 'plugins:diagram:load-org-data' %}",
                                             data: '',
                                             dataType: 'json',
                                             success:  function(response){

@@ -5,8 +5,8 @@ from nautobot.utilities.choices import ButtonColorChoices
 
 menu_items = (
     PluginMenuItem(
-        link='plugins:diagram:device-diagram',  # A reverse compatible link to follow.
-        link_text = 'test-link',  # Text to display to user.
+        link='plugins:diagram:org-diagram',  # A reverse compatible link to follow.
+        link_text = 'organization-diagram',  # Text to display to user.
         permissions = [],  # Optional: List of permissions required to display this link.
         # buttons = (  # Optional: Iterable of PluginMenuButton instances to display.
         #     PluginMenuButton(
