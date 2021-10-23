@@ -9,4 +9,5 @@ urlpatterns = [
     path("org-diagram/ajax-data/", views.load_org_data, name='load-org-data'),
     path("devices/<uuid:pk>/diagram/", views.DeviceDiagramView.as_view(), name='device-diagram-view'),
     path("devices/<uuid:pk>/ajax-data/", views.load_device_data, name='load-data'),
+    path("org-map/", views.world_map_view, name='world-map-view'),
 ]

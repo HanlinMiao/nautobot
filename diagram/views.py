@@ -87,6 +87,9 @@ class OrgDiagramView(generic.ObjectListView):
         }
         return render(request, self.template_name, context)
 
+def world_map_view(request):
+    return render(request, "diagram/organization_map.html")
+
 def device_diagram_view(request, pk):
     device = Device.objects.get(pk=pk)
     return render(request, "diagram/device_diagram.html", {"device": device, "pk": pk})
