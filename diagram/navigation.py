@@ -5,22 +5,8 @@ from nautobot.utilities.choices import ButtonColorChoices
 
 menu_items = (
     PluginMenuItem(
-        link='plugins:diagram:org-diagram',  # A reverse compatible link to follow.
-        link_text = 'organization-diagram',  # Text to display to user.
-        permissions = [],  # Optional: List of permissions required to display this link.
-        # buttons = (  # Optional: Iterable of PluginMenuButton instances to display.
-        #     PluginMenuButton(
-        #         'plugins:diagram:model',  # A reverse compatible link to follow.
-        #         'Sample Text',  # Text to display to user.
-        #         'mdi mdi-help-circle',  # Button icon CSS Classes (Currently supports Material Design Icons.)
-        #         ButtonColorChoices.BLUE,  # Optional: Color for the button.,
-        #         permissions = []  # Optional: List of permissions required to display this button.
-        #     )
-        # )
-    ),
-    PluginMenuItem(
         link='plugins:diagram:world-map-view',  # A reverse compatible link to follow.
-        link_text = 'organization-map',  # Text to display to user.
+        link_text = 'global-diagram',  # Text to display to user.
         permissions = [],  # Optional: List of permissions required to display this link.
         # buttons = (  # Optional: Iterable of PluginMenuButton instances to display.
         #     PluginMenuButton(

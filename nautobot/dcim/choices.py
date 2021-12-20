@@ -30,6 +30,14 @@ class SiteStatusChoices(ChoiceSet):
         STATUS_RETIRED: "danger",
     }
 
+    MAP_CSS_CLASSES = {
+        "Active": "green",
+        "Staging": "blue",
+        "Decommissioning": "orange",
+        "Retired": "red",
+        "Planned": "ltblue",
+    }
+
 
 #
 # Racks
