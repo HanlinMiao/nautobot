@@ -514,7 +514,7 @@ CELERY_RESULT_BACKEND = os.getenv("NAUTOBOT_CELERY_RESULT_BACKEND", parse_redis_
 # Instruct celery to report the started status of a job, instead of just `pending`, `finished`, or `failed`
 CELERY_TASK_TRACK_STARTED = True
 
-GOOGLE_MAP_API_KEY = "AIzaSyBc7sjqZjDnKxR4roXy_oez-DRyjIB87dw"
+GOOGLE_MAP_API_KEY = os.getenv("GOOGLE_MAP_API_KEY", "")
 
 # Global task time limits (seconds)
 # Exceeding the soft limit will result in a SoftTimeLimitExceeded exception,
