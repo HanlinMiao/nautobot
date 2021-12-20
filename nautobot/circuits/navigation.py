@@ -54,6 +54,11 @@ menu_items = (
                             ),
                         ),
                     ),
+                    NavMenuItem(
+                        link="plugins:diagram:world-map-view",
+                        name="Diagram",
+                        permissions=["circuits.view_circuit"],
+                    ),
                 ),
             ),
             NavMenuGroup(
